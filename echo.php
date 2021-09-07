@@ -8,7 +8,10 @@
     <body>
         Voici le résultat du script PHP : 
         <?php
-
+            $marque= "Alpine";
+            $couleur="Bleu";
+            $immatriculation="EP-243-JL";
+            echo "Voiture $immatriculation de marque $marque (couleur $couleur)";
           // Ceci est un commentaire PHP sur une ligne
           /* Ceci est le 2ème type de commentaire PHP
           sur plusieurs lignes */
@@ -19,12 +22,12 @@
 
           // On écrit le contenu de la variable 'texte' dans la page Web
           //echo $texte;
-          $prenom = "Marc";
-          echo "Bonjour " . $prenom;
+          //$prenom = "Marc";
+          /*echo "Bonjour " . $prenom;
           echo "Bonjour $prenom";
           echo 'Bonjour $prenom';
           echo $prenom;
-          echo "$prenom";
+          echo "$prenom";*/
 
         ?>
     </body>
