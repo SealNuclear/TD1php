@@ -6,12 +6,29 @@
     </head>
    
     <body>
-        Voici le résultat du script PHP : 
+        Liste des voitures :<ul>
         <?php
-            $marque= "Alpine";
-            $couleur="Bleu";
-            $immatriculation="EP-243-JL";
-            echo "Voiture $immatriculation de marque $marque (couleur $couleur)";
+            $voiture1= array(
+                    "marque"=> 'Alpine',
+                    "couleur"=>'Bleu',
+                    "immatriculation"=>'EP-243-JL');
+        $voiture2= array(
+            "marque"=> 'Ferrari',
+            "couleur"=>'Rouge',
+            "immatriculation"=>'EP-100-JL');
+            //var_dump($voiture);
+
+            $voitures = array(
+                    //$voiture1,$voiture2
+
+            );
+            //var_dump($voitures);
+        if(empty($voitures)) {echo("Il n'y a aucune voiture");}
+
+        else{echo "<li>Voiture $voiture1[marque] de marque $voiture1[couleur] (couleur $voiture1[immatriculation])</li>";
+            echo "<li>Voiture $voiture2[marque] de marque $voiture2[couleur] (couleur $voiture2[immatriculation])</li>";}
+
+
           // Ceci est un commentaire PHP sur une ligne
           /* Ceci est le 2ème type de commentaire PHP
           sur plusieurs lignes */
@@ -30,5 +47,6 @@
           echo "$prenom";*/
 
         ?>
+    </ul>
     </body>
 </html> 
